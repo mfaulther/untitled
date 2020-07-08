@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript"
+         src="{{ url_for('static', filename='jquery-3.5.1.js') }}"></script>
+
+    <style >
+
+        .container
+        {
+            width: 500px;
+            clear: both;
+        }
+
+        .container input
+        {
+            width: 100%;
+            clear: both;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<h1> Введите данные квартиры </h1>
+
+<button onclick="fill1()"> Test # 1 </button>
+<button> Test # 2 </button>
+<div class="container">
+    <form id="myForm" method="post" action="/get_price_ver2">
+
+
+        {% for feature in features %}
+
+            <label> {{ feature }}</label>
+            <input id = "{{ feature }}_id" name="{{ feature }}" type="text"> <br>
+
+        {% endfor %}
+
+        <input type="submit" value="Predict">
+    </form>
+</div>
+
+
+<script>
+
+
+    function fill1() {
+
+        $("#deposit_id").val(64000.0);
+        $("#client_fee_id").val(50.0);
+        $("#floor_id").val(2.0);
+        $("#area_total_id").val(70.0);
+        $("#area_living_id").val(40.0);
+        $("#area_kitchen_id").val(14.0);
+        $("#ceiling_id").val(2.70);
+        $("#rooms_id").val(0.0);
+        $("#is_children_allowed_id").val(1.0);
+        $("#is_pets_allowed_id").val(0.0);
+        $("#has_fridge_id").val(1.0);
+        $("#has_washmach_id").val(1.0);
+        $("#has_internet_id").val(1.0);
+        $("#has_tv_id").val(1.0);
+        $("#has_room_furniture_id").val(1.0);
+        $("#has_kitchen_furniture_id").val(1.0);
+        $("#has_bath_id").val(1.0);
+        $("#has_rubbish_chute_id").val(1.0);
+        $("#loggias_id").val(0.0);
+        $("#balconies_id").val(1.0);
+        $("#pass_lifts_id").val(1.0);
+        $("#serv_lifts_id").val(0.0);
+        $("#repair_type_id").val(3.0);
+        $("#window_view_id").val(3.0);
+        $("#latitude_id").val(55.900194);
+        $("#longitude_id").val(37.392249);
+        $("#build_year_id").val(2003.0);
+        $("#square_meter_price_id").val(174411.0);
+        $("#floors_count_id").val(6.0);
+        $("#entrances_id").val(2.0);
+        $("#walls_type_raw_id").val(1.0);
+        $("#beltway_hit_id").val(2.0);
+        $("#beltway_distance_id").val(4.0);
+        $("#region_with_type_id").val(1.0);
+        $("#city_with_type_id").val(41.0);
+        $("#city_area_id").val(7.0);
+        $("#city_district_with_type_id").val(48.0);
+        $("#metro_distance_id").val(1.6610);
+        $("#occupancy_in_percent_id").val(75.0);
+        $("#month_open_id").val(1.0);
+        $("#line_station_id").val(0.0)
+
+    }
+
+
+
+</script>
+
+
+</body>
+</html>

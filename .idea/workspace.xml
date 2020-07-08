@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="008896f8-9e75-4b79-8c80-628b674c964d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="JupyterTrust" id="abcba5dd-07d8-412e-ac7c-84efb1be70a6" />
+  <component name="ProjectId" id="1e4gajCP3N6pQs0fhDf2v3v7L7v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
+    <configuration name="Flask (app.py) (1)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <option name="flaskDebug" value="true" />
+      <module name="untitled" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="untitled" type="Python.FlaskServer">
+      <module name="untitled" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.untitled" />
+      <item itemvalue="Flask server.Flask (app.py)" />
+      <item itemvalue="Flask server.Flask (app.py) (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="Flask server.Flask (app.py) (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="008896f8-9e75-4b79-8c80-628b674c964d" name="Default Changelist" comment="" />
+      <created>1593586344812</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593586344812</updated>
+      <workItem from="1593586409203" duration="18892000" />
+      <workItem from="1593678429473" duration="2229000" />
+      <workItem from="1593842689560" duration="1777000" />
+      <workItem from="1593873741116" duration="3358000" />
+      <workItem from="1593881839626" duration="8837000" />
+      <workItem from="1593896366189" duration="9292000" />
+      <workItem from="1593906871704" duration="3719000" />
+      <workItem from="1593911718324" duration="4386000" />
+      <workItem from="1593919231392" duration="13868000" />
+      <workItem from="1594078324071" duration="2382000" />
+      <workItem from="1594190856680" duration="2007000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="84" y="4" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593929530423">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="84" y="4" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1593929530423" />
+    <state width="1324" height="242" key="GridCell.Tab.0.bottom" timestamp="1594108442228">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="242" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594108442228" />
+    <state width="1324" height="242" key="GridCell.Tab.0.center" timestamp="1594108442225">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="242" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594108442225" />
+    <state width="1324" height="242" key="GridCell.Tab.0.left" timestamp="1594108442224">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="242" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594108442224" />
+    <state width="1324" height="242" key="GridCell.Tab.0.right" timestamp="1594108442227">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1324" height="242" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594108442227" />
+    <state x="187" y="0" key="SettingsEditor" timestamp="1593874543572">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="187" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1593874543572" />
+    <state x="346" y="43" key="com.intellij.ide.util.TipDialog" timestamp="1594192236988">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="43" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594192236988" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/untitled$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1593588318804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/untitled$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1594079569166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled$Flask__app_py___1_.coverage" NAME="Flask (app.py) (1) Coverage Results" MODIFIED="1593923173117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
