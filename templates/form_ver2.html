@@ -8,18 +8,12 @@
          src="{{ url_for('static', filename='jquery-3.5.1.js') }}"></script>
 
     <style >
-
-        .container
+        .cla1
         {
-            width: 500px;
-            clear: both;
+            margin-left: 10px;
+            width: 40%;
         }
-
-        .container input
-        {
-            width: 100%;
-            clear: both;
-        }
+ 
 
 
     </style>
@@ -28,22 +22,63 @@
 
 <h1> Введите данные квартиры </h1>
 
-<button onclick="fill1()"> Test # 1 </button>
-<button> Test # 2 </button>
-<div class="container">
-    <form id="myForm" method="post" action="/get_price_ver2">
+
+<form action="/get_price_ver2" method="post">
+
+    <h1> {{ features | length }} </h1>
+
+    <label> full address </label>
+    <input name="full_addr" type="text"><br>
+
+    {% for feature in features  %}
+        
+        {% if feature.type in ['double', 'datetime'] %}
+            <div class="cla1">
+            <label> {{ feature.title }} </label>
+            <input type="text" name="{{ feature.name }}"> <br>
+            </div>
+
+        {% elif feature.type == 'integer' %}
+            <div class="cla1">
+            <label> {{ feature.title }} </label>
+            <input type="number" name="{{ feature.name }}"> <br>
+            </div>
+
+        {% elif feature.type == 'boolean' %}
+
+            <label> {{ feature.title }}</label>
+            <input type="checkbox" name="{{ feature.name }}" value="True"> <br>
+
+        {% else %}
+             {% if feature.name in ['window_view', 'wall_type', 'region_with_type', 'beltway_hit', 'repair_type', 'walls_type_raw'] %}
+
+                <label> {{ feature.title }}</label>
+                <select name="{{ feature.name }}">
+                {% for option in feature.options %}
+
+                    <option name="{{ option.name }}">  {{ option.title }}  </option>
+
+                {% endfor %}
+                </select>
+                <br>
+             {% else  %}
+                <label> {{ feature.title }}</label>
+                <input type="text"> <br>
+             {% endif %}
+                  
+        {% endif %}
+
+        
 
 
-        {% for feature in features %}
+    {% endfor %}
 
-            <label> {{ feature }}</label>
-            <input id = "{{ feature }}_id" name="{{ feature }}" type="text"> <br>
+    <br>
 
-        {% endfor %}
+      <input type="submit" value="Send">
 
-        <input type="submit" value="Predict">
-    </form>
-</div>
+</form>
+
 
 
 <script>
