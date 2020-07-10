@@ -9,18 +9,6 @@ import requests
 app = Flask(__name__)
 
 
-feature_names = ['']
-
-
-def func(form_dict):
-
-    for elem in form_dict:
-
-        if form_dict[elem] == 'on':
-            form_dict[elem] = 'True'
-
-
-
 
 
 
@@ -181,74 +169,6 @@ def get_address_info(can_addr):
         return None
 
 
-def func(features):
-    address = features.get('full_address')
-
-    canonical_address = get_canonical_address(address)
-
-    print(canonical_address)
-
-    address_info = get_address_info(canonical_address)
-
-    features['square_meter_price'] = address_info['square_meter_price']
-    features['city_district_with_type'] = address_info['city_district_with_type']
-
-
-
-@app.route('/get_price', methods=['POST'])
-def get_price():
-
-    data = request.get_json()
-
-    features_dict = data.get('features')
-
-   #print(features_dict)
-
-   #func(features_dict)
-
-   #print("==========================================")
-
-    print(features_dict)
-
-    rooms = features_dict.get('rooms')
-
-
-
-    features_array = np.array(list(features_dict.values()))
-
-
-    price_model_path, time_exp_model_path = models_dict[rooms]
-
-    price_model = p.load(open(price_model_path, 'rb'))
-    time_exp_model = p.load(open(time_exp_model_path, 'rb'))
-
-
-    price_pred = price_model.predict(features_array.reshape(1, -1))
-
-    new_features = np.insert(features_array, 0, price_pred)
-
-    print(map(lambda x: round(x, 2), new_features))
-
-    time_exp_pred = time_exp_model.predict(new_features.reshape(1, -1))
-
-
-    return jsonify({'price': price_pred[0], 'time_exp': time_exp_pred[0]})
-
-
-@app.route('/get_time_exp', methods=['POST'])
-def get_time_exp():
-    data = request.get_json()
-    prices = data.get('prices')
-
-    prices = np.array(prices).reshape(-1, 1)
-    prediction = np.array2string(model2.predict(prices).flatten())
-
-    return jsonify(prediction)
-
-@app.route('/form')
-def form():
-    return render_template('form.html', features=features)
-
 
 
 @app.route('/form_ver2')
@@ -261,36 +181,10 @@ def get_price_ver2():
 
     form_dict = request.form
 
-    df = pd.DataFrame(request.form, index=[0])
+    print(form_dict)
 
-    rooms = df.iloc[0]['rooms']
+    return "It's ok :) "
 
-
-
-    #print(rooms)
-
-    return "It's ok"
-
-    #rooms = int(request.form.get('rooms'))
-    #print(rooms)
-    #features_array = [float(str(value)) for value in request.form.values()]
-    #print(features_array)
-    #features_array = np.array(features_array).reshape(1, -1)
-
-    #price_model_path, time_exp_model_path = models_dict[rooms]
-
-    #price_model = p.load(open(price_model_path, 'rb'))
-    #time_exp_model = p.load(open(time_exp_model_path, 'rb'))
-
-    #price_pred = price_model.predict(features_array.reshape(1, -1))
-
-    #new_features = np.insert(features_array, 0, price_pred)
-
-    #print(new_features)
-
-    #time_exp_pred = time_exp_model.predict(new_features.reshape(1, -1))
-
-    #return jsonify({'price_pred': price_pred[0], 'time_exp_pred': time_exp_pred[0]})
 
 
 if __name__ == '__main__':
